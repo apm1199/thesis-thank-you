@@ -312,8 +312,8 @@ var GH_API      = 'https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents
 // 1. Copia il "Cloud name" dalla dashboard e mettilo sotto
 // 2. Vai Settings > Upload > Add upload preset > unsigned > salva
 // 3. Metti il nome del preset sotto
-var CLD_CLOUD   = 'INSERISCI_CLOUD_NAME';   // es: 'dxyz123abc'
-var CLD_PRESET  = 'INSERISCI_PRESET_NAME';  // es: 'thesis_unsigned'
+var CLD_CLOUD   = 'dypweuagc';  
+var CLD_PRESET  = 'Alessandro Depaoli';
 // =====================================================
 
 var friends=[], groups=[], dump=[];
