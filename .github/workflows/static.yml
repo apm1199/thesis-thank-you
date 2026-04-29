@@ -320,10 +320,19 @@ var currentPhotos=[], editingId=null, adminPwVisible=false;
 var lbSrc='', totpInterval=null, cloudAnim=null;
 
 // ===== STORAGE: GitHub RAW per lettura, GitHub API per scrittura =====
-  return fetch(GH_RAW+path+'?nocache='+Date.now(),{cache:'no-store'})
-    .then(function(r){if(!r.ok)return null;return r.json();})
-    .catch(function(){return null;});
+function ghRead(path){
+  return fetch(GH_RAW + path + '?nocache=' + Date.now(), {
+    cache: 'no-store'
+  })
+  .then(function(r){
+    if(!r.ok) return null;
+    return r.json();
+  })
+  .catch(function(){
+    return null;
+  });
 }
+  
 function ghGetSha(path){
   return fetch(GH_API+path,{headers:ghHeaders()})
     .then(function(r){if(r.status===404)return null;return r.json().then(function(j){return j.sha||null;});})
@@ -721,11 +730,31 @@ function saveGroups(){saveGroupsGH().then(function(){renderGroupsAdmin();syncGro
 // ===== ADMIN AUTH =====
 function toggleAdminPw(){adminPwVisible=!adminPwVisible;document.getElementById('admin-pw-box').style.display=adminPwVisible?'block':'none';if(adminPwVisible)setTimeout(function(){document.getElementById('admin-pw-input').focus();},50);}
 function checkAdmin(){
-  if(document.getElementById('admin-pw-input').value===ADMIN_PW){
-    document.getElementById('admin-pw-box').style.display='none';adminPwVisible=false;
-    showToast('Caricamento…');
-    loadAllData().then(function(){goToAdmin();});
-  }else{document.getElementById('admin-pw-input').style.borderColor='#f44';setTimeout(function(){document.getElementById('admin-pw-input').style.borderColor='';},900);}
+  if(document.getElementById('admin-pw-input').value === ADMIN_PW){
+    document.getElementById('admin-pw-box').style.display = 'none';
+    adminPwVisible = false;
+
+    showToast('Caricamento...');
+
+    loadAllData()
+      .then(function(){
+        syncGroupSelect();
+        renderFriendsList();
+        renderDump();
+        showView('admin-view');
+        showToast('Dashboard caricata');
+      })
+      .catch(function(e){
+        console.error('Errore apertura admin:', e);
+        showToast('Errore admin: ' + (e.message || e));
+      });
+
+  } else {
+    document.getElementById('admin-pw-input').style.borderColor = '#f44';
+    setTimeout(function(){
+      document.getElementById('admin-pw-input').style.borderColor = '';
+    },900);
+  }
 }
 function showTab(t){
   ['list','form','groups','dump'].forEach(function(id){document.getElementById('tab-'+id).style.display=id===t?'block':'none';document.getElementById('tb-'+id).classList.toggle('active',id===t);});
