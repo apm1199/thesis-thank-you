@@ -302,7 +302,6 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 // CONFIG — sostituisci con i tuoi valori Cloudinary
 // =====================================================
 var ADMIN_PW    = 'thesis_2026';
-var GH_TOKEN    = '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';
 var GH_USER     = 'apm1199';
 var GH_REPO     = 'thesis-thank-you';
 var GH_BRANCH   = 'main';
@@ -321,9 +320,6 @@ var currentPhotos=[], editingId=null, adminPwVisible=false;
 var lbSrc='', totpInterval=null, cloudAnim=null;
 
 // ===== STORAGE: GitHub RAW per lettura, GitHub API per scrittura =====
-function ghHeaders(){return{Authorization:'token '+GH_TOKEN,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'};}
-
-function ghRead(path){
   return fetch(GH_RAW+path+'?nocache='+Date.now(),{cache:'no-store'})
     .then(function(r){if(!r.ok)return null;return r.json();})
     .catch(function(){return null;});
@@ -333,16 +329,17 @@ function ghGetSha(path){
     .then(function(r){if(r.status===404)return null;return r.json().then(function(j){return j.sha||null;});})
     .catch(function(){return null;});
 }
-function ghWrite(path,data){
-  var enc;
-  try{enc=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));}
-  catch(e){enc=btoa(JSON.stringify(data,null,2));}
-  return ghGetSha(path).then(function(sha){
-    var body={message:'update '+path,content:enc,branch:GH_BRANCH};
-    if(sha)body.sha=sha;
-    return fetch(GH_API+path,{method:'PUT',headers:ghHeaders(),body:JSON.stringify(body)});
-  }).then(function(r){
-    if(!r.ok)return r.text().then(function(t){throw new Error(t);});
+function ghWrite(path, data) {
+  return fetch('/api/save-json', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ path, data })
+  }).then(function(r) {
+    if (!r.ok) {
+      return r.text().then(function(t){ throw new Error(t); });
+    }
     return r.json();
   });
 }
