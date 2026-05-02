@@ -44,10 +44,7 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 .dump-item .dl-btn{position:absolute;bottom:5px;right:5px;background:rgba(0,0,0,.6);border:none;border-radius:5px;color:#fff;cursor:pointer;padding:3px 8px;font-size:.68rem;font-family:sans-serif}
 .dump-item .rm-btn{position:absolute;top:5px;right:5px;background:rgba(180,0,0,.7);border:none;border-radius:50%;color:#fff;cursor:pointer;width:20px;height:20px;font-size:.75rem;display:none;align-items:center;justify-content:center}
 .dump-item:hover .rm-btn{display:flex}
-#vortex-overlay{position:fixed;inset:0;z-index:500;display:none;background:#0a0a0f;overflow:hidden}
-#vortex-canvas{position:absolute;inset:0;width:100%;height:100%}
-
-/* PERSONAL VIEW */
+/* PERSONAL */
 #personal-view{padding:0;align-items:stretch;justify-content:flex-start;background:#f5f3ee}
 #cloud-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
 .personal-scroll{position:relative;z-index:10;padding:3rem 2rem 4rem;display:flex;flex-direction:column;align-items:center;width:100%}
@@ -55,29 +52,23 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 .personal-name{font-size:clamp(1.4rem,4vw,2.2rem);font-weight:300;letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;margin-bottom:.4rem}
 .personal-divider{width:40px;height:1px;background:rgba(0,0,0,.15);margin:1rem 0 1.8rem}
 .personal-letter{font-size:1.05rem;line-height:1.9;color:#2a2a2a;white-space:pre-wrap;margin-bottom:1.5rem;font-style:italic}
-
-/* Photo carousel */
-.photo-carousel-wrap{position:relative;width:100%;margin-bottom:2rem;overflow:hidden;border-radius:14px}
+.photo-carousel-wrap{width:100%;margin-bottom:2rem;overflow:hidden;border-radius:14px}
 .photo-carousel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:8px 4px 16px;scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.2) transparent}
 .photo-carousel::-webkit-scrollbar{height:4px}
-.photo-carousel::-webkit-scrollbar-track{background:transparent}
 .photo-carousel::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:2px}
 .photo-carousel-item{flex:0 0 auto;width:220px;height:220px;scroll-snap-align:center;border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,.08);background:#e8e6e0;position:relative;cursor:pointer;transition:transform .25s,box-shadow .25s}
 .photo-carousel-item:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.15)}
 .photo-carousel-item img{width:100%;height:100%;object-fit:cover;display:block}
 .photo-carousel-item .dl-btn{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,.45);border:none;border-radius:5px;color:#fff;cursor:pointer;padding:3px 8px;font-size:.68rem;font-family:sans-serif;opacity:0;transition:opacity .2s}
 .photo-carousel-item:hover .dl-btn{opacity:1}
-
-/* letter+photos side layout (< 4 photos) */
 .letter-side-layout{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:start;margin-bottom:2rem}
 .letter-side-layout .personal-letter{margin-bottom:0}
-.side-photos{display:flex;flex-direction:column;gap:10px;overflow-y:auto;max-height:420px;padding-right:4px}
+.side-photos{display:flex;flex-direction:column;gap:10px;overflow-y:auto;max-height:420px}
 .side-photo-item{width:170px;height:170px;flex:0 0 170px;border-radius:10px;overflow:hidden;border:1px solid rgba(0,0,0,.08);background:#e8e6e0;cursor:pointer;position:relative;transition:transform .2s}
 .side-photo-item:hover{transform:scale(1.03)}
 .side-photo-item img{width:100%;height:100%;object-fit:cover;display:block}
 .side-photo-item .dl-btn{position:absolute;bottom:5px;right:5px;background:rgba(0,0,0,.45);border:none;border-radius:5px;color:#fff;cursor:pointer;padding:3px 7px;font-size:.68rem;font-family:sans-serif;opacity:0;transition:opacity .2s}
 .side-photo-item:hover .dl-btn{opacity:1}
-
 .group-section{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,.1)}
 .group-section-title{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.3);font-family:sans-serif;margin-bottom:1.5rem}
 .group-collective-letter{background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
@@ -88,10 +79,9 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 .group-member-card:hover{background:rgba(255,255,255,.85)}
 .group-member-card.highlight{border-color:rgba(100,100,220,.3);background:rgba(220,215,255,.5)}
 .group-member-card .gm-name{font-size:1rem;color:#1a1a1a;margin-bottom:.3rem;font-family:sans-serif}
-.group-member-card .gm-preview{font-size:.88rem;color:rgba(0,0,0,.45);font-style:italic;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.back-btn{background:transparent;border:1px solid rgba(0,0,0,.18);color:rgba(0,0,0,.4);padding:.5rem 1.2rem;border-radius:6px;cursor:pointer;font-family:sans-serif;font-size:.8rem;letter-spacing:.08em;transition:all .2s}
+.group-member-card .gm-preview{font-size:.88rem;color:rgba(0,0,0,.45);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.back-btn{background:transparent;border:1px solid rgba(0,0,0,.18);color:rgba(0,0,0,.4);padding:.5rem 1.2rem;border-radius:6px;cursor:pointer;font-family:sans-serif;font-size:.8rem;transition:all .2s}
 .back-btn:hover{border-color:rgba(0,0,0,.5);color:#111}
-
 /* ADMIN */
 #admin-view{align-items:flex-start;justify-content:flex-start;padding:2rem}
 .admin-wrap{max-width:960px;width:100%}
@@ -128,30 +118,27 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 .btn-preview{flex:1;min-width:100px;padding:.72rem;background:transparent;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7);border-radius:8px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:sans-serif}
 .btn-preview:hover{border-color:rgba(255,255,255,.5);color:#fff}
 .btn-del{padding:.72rem 1rem;background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.22);color:rgba(255,110,110,.8);border-radius:8px;font-size:.82rem;cursor:pointer;font-family:sans-serif}
-.btn-del:hover{background:rgba(255,60,60,.2)}
 .groups-admin-list{margin-bottom:1.2rem}
 .group-admin-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:1.2rem;margin-bottom:1rem}
 .group-admin-card .ga-header{display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem}
 .group-admin-card .ga-header input{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;color:#fff;font-size:1rem;padding:.5rem .7rem;outline:none;font-family:sans-serif}
-.group-admin-card .rm-g{background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.2);color:rgba(255,110,110,.8);border-radius:6px;padding:.35rem .7rem;cursor:pointer;font-size:.75rem;font-family:sans-serif;white-space:nowrap}
+.group-admin-card .rm-g{background:rgba(255,60,60,.1);border:1px solid rgba(255,60,60,.2);color:rgba(255,110,110,.8);border-radius:6px;padding:.35rem .7rem;cursor:pointer;font-size:.75rem;font-family:sans-serif}
 .group-admin-card label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35);font-family:sans-serif;display:block;margin-bottom:.4rem}
 .group-admin-card textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:6px;color:#fff;font-size:.88rem;padding:.5rem .7rem;outline:none;font-family:Georgia,serif;min-height:80px;resize:vertical;line-height:1.6}
 .group-admin-card textarea::placeholder{color:rgba(255,255,255,.2)}
 .group-members-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
 .member-tag{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);padding:.25rem .6rem;border-radius:12px;font-size:.75rem;font-family:sans-serif}
 .admin-access{position:fixed;top:1rem;right:1rem;z-index:200}
-.admin-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.3);padding:.32rem .65rem;border-radius:6px;cursor:pointer;font-family:monospace;font-size:.68rem;letter-spacing:.08em;transition:all .2s}
+.admin-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.3);padding:.32rem .65rem;border-radius:6px;cursor:pointer;font-family:monospace;font-size:.68rem;transition:all .2s}
 .admin-link:hover{color:rgba(255,255,255,.7)}
 .admin-pw-box{position:fixed;top:3.2rem;right:1rem;background:#111;border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:.9rem;z-index:200;display:none}
 .admin-pw-box input{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:6px;color:#fff;padding:.38rem .55rem;font-family:monospace;outline:none;width:160px}
 .admin-pw-box button{margin-top:.45rem;width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:.32rem;border-radius:6px;cursor:pointer;font-family:sans-serif;font-size:.78rem}
 .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:rgba(20,20,20,.95);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);color:#fff;padding:.55rem 1.4rem;border-radius:20px;font-family:sans-serif;font-size:.82rem;z-index:700;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
-/* ===== TRANSIZIONI ===== */
-.flash-overlay{position:fixed;inset:0;z-index:800;pointer-events:none;opacity:0;background:#fff}
-.flash-overlay.dark{background:#0a0a0f}
-@keyframes flashIn{0%{opacity:0}40%{opacity:1}100%{opacity:0}}
-@keyframes flashInHold{0%{opacity:0}30%{opacity:1}70%{opacity:1}100%{opacity:0}}
+input[type="file"]{display:none}
+/* TRANSIZIONI */
+.t-overlay{position:fixed;inset:0;z-index:800;pointer-events:all;opacity:0;transition:opacity .5s ease}
 .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:550;align-items:center;justify-content:center;flex-direction:column;gap:1rem}
 .lightbox.open{display:flex}
 .lightbox img{max-width:92vw;max-height:82vh;border-radius:8px;object-fit:contain}
@@ -167,7 +154,6 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
   <img id="lb-img" src="">
   <button class="lb-dl" onclick="dlLB()">Scarica originale</button>
 </div>
-<div id="vortex-overlay"><canvas id="vortex-canvas"></canvas></div>
 <div class="admin-access">
   <button class="admin-link" onclick="toggleAdminPw()">admin</button>
   <div class="admin-pw-box" id="admin-pw-box">
@@ -223,7 +209,7 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
       <div class="personal-divider"></div>
       <div id="pv-content"></div>
       <div id="pv-group-section"></div>
-      <button class="back-btn" style="margin-top:2rem" onclick="showView('landing')">← indietro</button>
+      <button class="back-btn" style="margin-top:2rem" onclick="smoothTo('landing','dark')">← indietro</button>
     </div>
   </div>
 </div>
@@ -234,14 +220,13 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
     <div class="admin-header">
       <div style="display:flex;align-items:center;gap:1rem">
         <span style="font-size:1.2rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);font-family:sans-serif">Dashboard</span>
-        <button onclick="showView('landing')" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.5);padding:.3rem .8rem;border-radius:6px;cursor:pointer;font-family:sans-serif;font-size:.75rem">← Home</button>
+        <button onclick="smoothTo('landing','dark')" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.5);padding:.3rem .8rem;border-radius:6px;cursor:pointer;font-family:sans-serif;font-size:.75rem">← Home</button>
       </div>
       <div class="admin-tabs">
         <button class="tab-btn active" id="tb-list" onclick="showTab('list')">Amici</button>
         <button class="tab-btn" id="tb-form" onclick="showTab('form')">+ Nuovo</button>
         <button class="tab-btn" id="tb-groups" onclick="showTab('groups')">Gruppi</button>
         <button class="tab-btn" id="tb-dump" onclick="showTab('dump')">Picture Dump</button>
-        <button class="tab-btn" onclick="showView('landing')" style="border-color:rgba(255,200,100,.2);color:rgba(255,200,100,.6)">⌂ Home</button>
       </div>
     </div>
     <div id="tab-list">
@@ -264,7 +249,7 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
         </div>
         <div class="form-row" id="f-phone-row"><label>Numero di telefono</label><input type="text" id="f-phone" placeholder="+39..."></div>
         <div class="form-row" id="f-fake-row" style="display:none">
-          <label>Codice fittizio (generato auto)</label>
+          <label>Codice fittizio (auto)</label>
           <input type="text" id="f-fake" readonly style="opacity:.6">
         </div>
         <div class="form-row">
@@ -273,8 +258,8 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
         </div>
         <div class="form-row"><label>Lettera personale</label><textarea id="f-letter" placeholder="Scrivi il messaggio personale..."></textarea></div>
         <div class="form-row">
-          <label>Foto — carica dal dispositivo</label>
-          <div class="photo-upload-area" onclick="document.getElementById('photo-input').click()">Clicca per caricare foto (via Cloudinary)</div>
+          <label>Foto (via Cloudinary)</label>
+          <div class="photo-upload-area" onclick="document.getElementById('photo-input').click()">Clicca per caricare foto</div>
           <input type="file" id="photo-input" accept="image/*" multiple onchange="handlePhotos(this)">
           <div class="photo-thumbs" id="photo-thumbs"></div>
         </div>
@@ -288,7 +273,7 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
     <div id="tab-groups" style="display:none">
       <div class="groups-admin-list" id="groups-admin-list"></div>
       <button class="add-btn" onclick="addGroup()">+ Nuovo gruppo</button>
-      <div style="margin-top:1rem"><button class="btn-save" style="max-width:220px" onclick="saveGroups()">Salva tutti i gruppi</button></div>
+      <div style="margin-top:1rem"><button class="btn-save" style="max-width:220px" onclick="saveGroups()">Salva gruppi</button></div>
     </div>
     <div id="tab-dump" style="display:none">
       <p style="font-family:sans-serif;font-size:.82rem;color:rgba(255,255,255,.4);margin-bottom:1rem">Foto del picture dump</p>
@@ -298,88 +283,69 @@ body{font-family:'Georgia',serif;background:#0a0a0f;color:#fff;min-height:100vh;
 </div>
 
 <script>
-// =====================================================
-// CONFIG — sostituisci con i tuoi valori Cloudinary
-// =====================================================
-var ADMIN_PW    = 'thesis_2026';
-var GH_USER     = 'apm1199';
-var GH_REPO     = 'thesis-thank-you';
-var GH_BRANCH   = 'main';
-var GH_RAW      = 'https://raw.githubusercontent.com/'+GH_USER+'/'+GH_REPO+'/'+GH_BRANCH+'/';
-var GH_API      = 'https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/';
-// --- CLOUDINARY: vai su cloudinary.com, crea account, poi:
-// 1. Copia il "Cloud name" dalla dashboard e mettilo sotto
-// 2. Vai Settings > Upload > Add upload preset > unsigned > salva
-// 3. Metti il nome del preset sotto
-var CLD_CLOUD   = 'dypweuagc';  
-var CLD_PRESET  = 'ml_default';
-// =====================================================
+// ===== CONFIG =====
+var ADMIN_PW  = 'thesis_2026';
+var GH_TOKEN  = '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';
+var GH_USER   = 'apm1199';
+var GH_REPO   = 'thesis-thank-you';
+var GH_BRANCH = 'main';
+var GH_RAW    = 'https://raw.githubusercontent.com/'+GH_USER+'/'+GH_REPO+'/'+GH_BRANCH+'/';
+var GH_API    = 'https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/';
+var CLD_CLOUD = 'dypweuagc';
+var CLD_PRESET= 'ml_default';
 
 var friends=[], groups=[], dump=[];
 var currentPhotos=[], editingId=null, adminPwVisible=false;
 var lbSrc='', totpInterval=null, cloudAnim=null;
 
-// ===== STORAGE: GitHub RAW per lettura, GitHub API per scrittura =====
+// ===== GITHUB — lettura via RAW, scrittura via API =====
 function ghRead(path){
-  return fetch(GH_RAW + path + '?nocache=' + Date.now(), {
-    cache: 'no-store'
-  })
-  .then(function(r){
-    if(!r.ok) return null;
-    return r.json();
-  })
-  .catch(function(){
-    return null;
-  });
-}
-  
-function ghGetSha(path){
-  return fetch(GH_API+path,{headers:ghHeaders()})
-    .then(function(r){if(r.status===404)return null;return r.json().then(function(j){return j.sha||null;});})
+  return fetch(GH_RAW+path+'?t='+Date.now(),{cache:'no-store'})
+    .then(function(r){return r.ok?r.json():null;})
     .catch(function(){return null;});
 }
-function ghWrite(path, data) {
-  return fetch('/api/save-json', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ path, data })
-  }).then(function(r) {
-    if (!r.ok) {
-      return r.text().then(function(t){ throw new Error(t); });
-    }
+function ghHeaders(){
+  return {Authorization:'token '+GH_TOKEN,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'};
+}
+function ghGetSha(path){
+  return fetch(GH_API+path,{headers:ghHeaders()})
+    .then(function(r){return r.status===404?null:r.json().then(function(j){return j.sha||null;});})
+    .catch(function(){return null;});
+}
+function ghWrite(path,data){
+  var enc;
+  try{enc=btoa(unescape(encodeURIComponent(JSON.stringify(data,null,2))));}
+  catch(e){enc=btoa(JSON.stringify(data));}
+  return ghGetSha(path).then(function(sha){
+    var body={message:'update '+path,content:enc,branch:GH_BRANCH};
+    if(sha)body.sha=sha;
+    return fetch(GH_API+path,{method:'PUT',headers:ghHeaders(),body:JSON.stringify(body)});
+  }).then(function(r){
+    if(!r.ok)return r.text().then(function(t){throw new Error(t);});
     return r.json();
   });
 }
 function saveFriendsGH(){return ghWrite('data/friends.json',friends);}
 function saveGroupsGH(){return ghWrite('data/groups.json',groups);}
 function saveDumpGH(){return ghWrite('data/dump.json',dump);}
-
 function loadAllData(){
   return Promise.all([ghRead('data/friends.json'),ghRead('data/groups.json'),ghRead('data/dump.json')])
     .then(function(res){
-      friends = Array.isArray(res[0])?res[0]:[];
-      groups  = Array.isArray(res[1])?res[1]:[];
-      dump    = Array.isArray(res[2])?res[2]:[];
+      friends=Array.isArray(res[0])?res[0]:[];
+      groups=Array.isArray(res[1])?res[1]:[];
+      dump=Array.isArray(res[2])?res[2]:[];
       renderDump();
-    }).catch(function(e){console.warn('loadAllData:',e);});
+    });
 }
 
-// ===== CLOUDINARY UPLOAD =====
+// ===== CLOUDINARY =====
 function uploadToCloudinary(file){
-  if(CLD_CLOUD==='INSERISCI_CLOUD_NAME'||CLD_PRESET==='INSERISCI_PRESET_NAME'){
-    return Promise.reject(new Error('Configura Cloudinary prima! Vedi commenti nel codice.'));
-  }
   var fd=new FormData();
   fd.append('file',file);
   fd.append('upload_preset',CLD_PRESET);
   return fetch('https://api.cloudinary.com/v1_1/'+CLD_CLOUD+'/image/upload',{method:'POST',body:fd})
     .then(function(r){return r.json();})
-    .then(function(j){
-      if(j.error)throw new Error(j.error.message);
-      return j.secure_url;
-    });
+    .then(function(j){if(j.error)throw new Error(j.error.message);return j.secure_url;});
 }
 
 // ===== LASER =====
@@ -403,43 +369,36 @@ function animL(){
 }
 animL();
 
-// ===== CLOUDS — bianchissime, volumetriche, in movimento =====
+// ===== NUVOLE =====
 function startClouds(){
   var cc=document.getElementById('cloud-canvas');
   cc.width=innerWidth;cc.height=innerHeight;
   var ctx=cc.getContext('2d'),t=0;
   var mouse={x:innerWidth/2,y:innerHeight/2};
   var pv=document.getElementById('personal-view');
-  function onMove(e){var src=e.touches?e.touches[0]:e;mouse.x=src.clientX;mouse.y=src.clientY;}
+  function onMove(e){var s=e.touches?e.touches[0]:e;mouse.x=s.clientX;mouse.y=s.clientY;}
   pv.addEventListener('mousemove',onMove);
   pv.addEventListener('touchmove',onMove,{passive:true});
-  // 8 nuvole, ognuna è un cluster di sfere sfumate
   var clouds=[
-    {bx:.08,by:.12,sc:1.6,sp:.04,ph:0},
-    {bx:.45,by:.06,sc:2.0,sp:.035,ph:2.0},
-    {bx:.78,by:.18,sc:1.4,sp:.05,ph:4.1},
-    {bx:.18,by:.48,sc:1.8,sp:.038,ph:1.2},
-    {bx:.62,by:.54,sc:1.5,sp:.045,ph:3.4},
-    {bx:.03,by:.68,sc:1.3,sp:.055,ph:5.0},
-    {bx:.38,by:.76,sc:1.7,sp:.037,ph:0.7},
-    {bx:.82,by:.70,sc:1.4,sp:.052,ph:2.8}
+    {bx:.08,by:.12,sc:1.6,sp:.04,ph:0},{bx:.45,by:.06,sc:2.0,sp:.035,ph:2.0},
+    {bx:.78,by:.18,sc:1.4,sp:.05,ph:4.1},{bx:.18,by:.48,sc:1.8,sp:.038,ph:1.2},
+    {bx:.62,by:.54,sc:1.5,sp:.045,ph:3.4},{bx:.03,by:.68,sc:1.3,sp:.055,ph:5.0},
+    {bx:.38,by:.76,sc:1.7,sp:.037,ph:0.7},{bx:.82,by:.70,sc:1.4,sp:.052,ph:2.8}
   ];
-  // Sfere interne per cluster
-  var spheres=[
+  var sph=[
     {dx:0,dy:0,r:60},{dx:48,dy:-12,r:50},{dx:-44,dy:-8,r:46},
     {dx:22,dy:-36,r:40},{dx:-17,dy:26,r:36},{dx:65,dy:16,r:34},
     {dx:-58,dy:12,r:38},{dx:30,dy:30,r:30},{dx:-30,dy:-30,r:28}
   ];
   function drawCloud(cx,cy,sc){
-    spheres.forEach(function(s){
+    sph.forEach(function(s){
       var bx=cx+s.dx*sc,by=cy+s.dy*sc,br=s.r*sc;
       var g=ctx.createRadialGradient(bx-br*.25,by-br*.3,br*.05,bx,by,br);
       g.addColorStop(0,'rgba(255,255,255,1.0)');
       g.addColorStop(.3,'rgba(252,252,255,0.96)');
       g.addColorStop(.65,'rgba(240,243,255,0.6)');
       g.addColorStop(1,'rgba(225,230,255,0)');
-      ctx.beginPath();ctx.arc(bx,by,br,0,Math.PI*2);
-      ctx.fillStyle=g;ctx.fill();
+      ctx.beginPath();ctx.arc(bx,by,br,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();
     });
   }
   function draw(){
@@ -451,8 +410,7 @@ function startClouds(){
       var cy=H*c.by+Math.cos(t*c.sp*.6+c.ph)*22+my*.15;
       drawCloud(cx,cy,c.sc);
     });
-    t+=.003;
-    cloudAnim=requestAnimationFrame(draw);
+    t+=.003;cloudAnim=requestAnimationFrame(draw);
   }
   draw();
 }
@@ -462,75 +420,61 @@ function stopClouds(){
   if(cc)cc.getContext('2d').clearRect(0,0,cc.width,cc.height);
 }
 
-// ===== TRANSIZIONI SMOOTH =====
-function transitionTo(targetFn, type){
-  // type: 'light' (bianco luminoso) | 'dark' (scuro per admin)
+// ===== TRANSIZIONI =====
+// type: 'light' = bagliore bianco (→ pagina personale)
+//       'dark'  = dissolvenza scura (→ admin / indietro)
+function smoothTo(targetId,type,afterFn){
   var ov=document.createElement('div');
-  ov.className='flash-overlay'+(type==='dark'?' dark':'');
-  ov.style.transition='opacity .45s ease';
+  ov.className='t-overlay';
+  ov.style.background=type==='light'?'#fff':'#0a0a0f';
   document.body.appendChild(ov);
 
-  // Fade in
-  requestAnimationFrame(function(){
-    requestAnimationFrame(function(){
-      ov.style.opacity='1';
-    });
-  });
-
-  // Se luce, aggiungi bagliore
   if(type==='light'){
-    var rays=document.createElement('canvas');
-    rays.style.cssText='position:absolute;inset:0;width:100%;height:100%;';
-    ov.appendChild(rays);
-    rays.width=innerWidth;rays.height=innerHeight;
-    var rc=rays.getContext('2d');
-    var cx=innerWidth/2,cy=innerHeight/2;
-    var frame=0;
-    var rayAnim=setInterval(function(){
-      rc.clearRect(0,0,rays.width,rays.height);
-      var prog=Math.min(frame/18,1);
-      // Raggi di luce
+    // Canvas raggi di luce
+    var rc=document.createElement('canvas');
+    rc.style.cssText='position:absolute;inset:0;width:100%;height:100%';
+    ov.appendChild(rc);
+    rc.width=innerWidth;rc.height=innerHeight;
+    var rctx=rc.getContext('2d');
+    var cx2=innerWidth/2,cy2=innerHeight/2,fr=0;
+    var ri=setInterval(function(){
+      rctx.clearRect(0,0,rc.width,rc.height);
+      var p=Math.min(fr/20,1);
       for(var r=0;r<24;r++){
-        var angle=(r/24)*Math.PI*2+frame*.012;
-        var len=(200+Math.sin(frame*.08+r)*.60)*prog*Math.min(innerWidth,innerHeight)*.5;
-        var grd=rc.createLinearGradient(cx,cy,cx+Math.cos(angle)*len,cy+Math.sin(angle)*len);
-        grd.addColorStop(0,'rgba(255,255,220,'+(0.55*prog)+')');
+        var ang=(r/24)*Math.PI*2+fr*.015;
+        var len=p*Math.min(innerWidth,innerHeight)*.55;
+        var grd=rctx.createLinearGradient(cx2,cy2,cx2+Math.cos(ang)*len,cy2+Math.sin(ang)*len);
+        grd.addColorStop(0,'rgba(255,240,180,'+(0.6*p)+')');
         grd.addColorStop(1,'rgba(255,255,255,0)');
-        rc.beginPath();rc.moveTo(cx,cy);
-        rc.lineTo(cx+Math.cos(angle-0.04)*len,cy+Math.sin(angle-0.04)*len);
-        rc.lineTo(cx+Math.cos(angle+0.04)*len,cy+Math.sin(angle+0.04)*len);
-        rc.closePath();rc.fillStyle=grd;rc.fill();
+        rctx.beginPath();
+        rctx.moveTo(cx2,cy2);
+        rctx.lineTo(cx2+Math.cos(ang-.04)*len,cy2+Math.sin(ang-.04)*len);
+        rctx.lineTo(cx2+Math.cos(ang+.04)*len,cy2+Math.sin(ang+.04)*len);
+        rctx.closePath();rctx.fillStyle=grd;rctx.fill();
       }
-      // Alone centrale
-      var gl=rc.createRadialGradient(cx,cy,0,cx,cy,180*prog);
-      gl.addColorStop(0,'rgba(255,255,200,'+(0.9*prog)+')');
-      gl.addColorStop(.4,'rgba(255,255,220,'+(0.5*prog)+')');
+      var gl=rctx.createRadialGradient(cx2,cy2,0,cx2,cy2,160*p);
+      gl.addColorStop(0,'rgba(255,250,200,'+(0.95*p)+')');
+      gl.addColorStop(.5,'rgba(255,255,220,'+(0.4*p)+')');
       gl.addColorStop(1,'rgba(255,255,255,0)');
-      rc.beginPath();rc.arc(cx,cy,180*prog,0,Math.PI*2);rc.fillStyle=gl;rc.fill();
-      frame++;
+      rctx.beginPath();rctx.arc(cx2,cy2,160*p,0,Math.PI*2);rctx.fillStyle=gl;rctx.fill();
+      fr++;
     },16);
-    setTimeout(function(){clearInterval(rayAnim);},700);
+    setTimeout(function(){clearInterval(ri);},600);
   }
 
-  // Esegui transizione al picco (metà)
+  // Fade in overlay
+  requestAnimationFrame(function(){requestAnimationFrame(function(){ov.style.opacity='1';});});
+
+  // Al picco esegui azione
   setTimeout(function(){
-    targetFn();
+    if(afterFn)afterFn();
+    else showView(targetId);
     // Fade out
     setTimeout(function(){
       ov.style.opacity='0';
-      setTimeout(function(){if(ov.parentNode)ov.parentNode.removeChild(ov);},500);
-    },type==='light'?260:150);
-  },420);
-}
-
-// ===== TRANSIZIONE → PERSONAL (luce bianca luminosa) =====
-function runVortex(friend){
-  transitionTo(function(){showPersonal(friend);},'light');
-}
-
-// ===== TRANSIZIONE → ADMIN (smooth scura) =====
-function goToAdmin(){
-  transitionTo(function(){syncGroupSelect();renderFriendsList();showView('admin-view');},'dark');
+      setTimeout(function(){if(ov.parentNode)ov.parentNode.removeChild(ov);},550);
+    },type==='light'?200:100);
+  },480);
 }
 
 // ===== VIEWS =====
@@ -569,7 +513,7 @@ function copyTOTP(){
   navigator.clipboard.writeText(code).then(function(){showToast('Codice copiato!');}).catch(function(){document.getElementById('paste-input').value=code;showToast('Codice inserito nel box!');});
 }
 
-// ===== ACCESS =====
+// ===== ACCESSO =====
 function enterCode(){
   var pasted=document.getElementById('paste-input').value.trim();
   document.getElementById('paste-error').textContent='';
@@ -581,7 +525,8 @@ function enterCode(){
     if(matched)break;
   }
   if(!matched){document.getElementById('paste-error').textContent='Codice non valido o scaduto. Rigeneralo.';return;}
-  runVortex(matched);
+  // Transizione luce → pagina personale
+  smoothTo('personal-view','light',function(){showPersonal(matched);});
 }
 
 // ===== PERSONAL VIEW =====
@@ -589,9 +534,7 @@ function showPersonal(friend){
   document.getElementById('pv-name').textContent=friend.name;
   var cont=document.getElementById('pv-content');cont.innerHTML='';
   var photos=friend.photos||[],letter=friend.letter||'';
-
   if(photos.length>0&&photos.length<4&&letter){
-    // Layout affiancato: lettera sx, foto dx scorrevoli
     var wrap=document.createElement('div');wrap.className='letter-side-layout';
     var lDiv=document.createElement('div');lDiv.className='personal-letter';lDiv.textContent=letter;
     var pCol=document.createElement('div');pCol.className='side-photos';
@@ -600,18 +543,16 @@ function showPersonal(friend){
   } else {
     if(letter){var lDiv2=document.createElement('div');lDiv2.className='personal-letter';lDiv2.textContent=letter;cont.appendChild(lDiv2);}
     if(photos.length){
-      // Carosello orizzontale scorrevole
-      var carWrap=document.createElement('div');carWrap.className='photo-carousel-wrap';
+      var cw=document.createElement('div');cw.className='photo-carousel-wrap';
       var car=document.createElement('div');car.className='photo-carousel';
       photos.forEach(function(src){car.appendChild(mkCarouselItem(src,friend.name));});
-      carWrap.appendChild(car);cont.appendChild(carWrap);
+      cw.appendChild(car);cont.appendChild(cw);
     }
   }
   buildGroupSection(friend);
   showView('personal-view');
-  setTimeout(function(){document.querySelector('.personal-scroll').scrollTop=0;},80);
+  setTimeout(function(){var ps=document.querySelector('.personal-scroll');if(ps)ps.scrollTop=0;},80);
 }
-
 function mkSidePhoto(src,name){
   var item=document.createElement('div');item.className='side-photo-item';
   var img=document.createElement('img');img.src=src;img.onerror=function(){this.style.opacity='.3';};
@@ -626,7 +567,6 @@ function mkCarouselItem(src,name){
   var dl=document.createElement('button');dl.className='dl-btn';dl.textContent='↓';dl.onclick=function(e){e.stopPropagation();dlImg(src,name);};
   item.appendChild(img);item.appendChild(dl);return item;
 }
-
 function buildGroupSection(friend){
   var gs=document.getElementById('pv-group-section');gs.innerHTML='';
   if(!friend.group)return;
@@ -677,9 +617,7 @@ function handleDumpUpload(input){
       return uploadToCloudinary(file).then(function(url){dump.push(url);renderDump();});
     });
   });
-  chain.then(function(){return saveDumpGH();})
-    .then(function(){showToast('Foto caricate ✓');})
-    .catch(function(e){showToast('Errore: '+(e.message||e));});
+  chain.then(function(){return saveDumpGH();}).then(function(){showToast('Foto caricate ✓');}).catch(function(e){showToast('Errore: '+(e.message||e));});
 }
 function renderDump(){
   ['dump-grid','dump-grid-admin'].forEach(function(id){
@@ -700,7 +638,7 @@ function renderDump(){
   });
 }
 
-// ===== GROUPS =====
+// ===== GRUPPI =====
 function syncGroupSelect(){
   var sel=document.getElementById('f-group');if(!sel)return;
   var cur=sel.value;sel.innerHTML='<option value="">Nessun gruppo</option>';
@@ -713,11 +651,14 @@ function renderGroupsAdmin(){
     var members=friends.filter(function(f){return f.group===grp.name;});
     var card=document.createElement('div');card.className='group-admin-card';
     var hdr=document.createElement('div');hdr.className='ga-header';
-    var inp=document.createElement('input');inp.type='text';inp.value=grp.name;inp.placeholder='Nome gruppo';inp.oninput=function(e){groups[i].name=e.target.value;syncGroupSelect();};
-    var rm=document.createElement('button');rm.className='rm-g';rm.textContent='Elimina';rm.onclick=function(){groups.splice(i,1);renderGroupsAdmin();syncGroupSelect();};
+    var inp=document.createElement('input');inp.type='text';inp.value=grp.name;inp.placeholder='Nome gruppo';
+    inp.oninput=function(e){groups[i].name=e.target.value;syncGroupSelect();};
+    var rm=document.createElement('button');rm.className='rm-g';rm.textContent='Elimina';
+    rm.onclick=function(){groups.splice(i,1);renderGroupsAdmin();syncGroupSelect();};
     hdr.appendChild(inp);hdr.appendChild(rm);card.appendChild(hdr);
-    var lbl=document.createElement('label');lbl.textContent='Lettera collettiva';card.appendChild(lbl);
-    var ta=document.createElement('textarea');ta.placeholder='Scrivi per tutto il gruppo...';ta.value=grp.collectiveLetter||'';ta.oninput=function(e){groups[i].collectiveLetter=e.target.value;};card.appendChild(ta);
+    var lbl=document.createElement('label');lbl.textContent='Lettera collettiva del gruppo';card.appendChild(lbl);
+    var ta=document.createElement('textarea');ta.placeholder='Scrivi per tutto il gruppo...';ta.value=grp.collectiveLetter||'';
+    ta.oninput=function(e){groups[i].collectiveLetter=e.target.value;};card.appendChild(ta);
     var tags=document.createElement('div');tags.className='group-members-tags';
     if(members.length){members.forEach(function(m){var s=document.createElement('span');s.className='member-tag';s.textContent=m.name;tags.appendChild(s);});}
     else tags.innerHTML='<span style="font-size:.72rem;color:rgba(255,255,255,.22);font-family:sans-serif">Nessun membro</span>';
@@ -725,49 +666,45 @@ function renderGroupsAdmin(){
   });
 }
 function addGroup(){groups.push({name:'Nuovo gruppo',collectiveLetter:''});renderGroupsAdmin();syncGroupSelect();}
-function saveGroups(){saveGroupsGH().then(function(){renderGroupsAdmin();syncGroupSelect();showToast('Gruppi salvati ✓');}).catch(function(e){showToast('Errore: '+(e.message||e));});}
+function saveGroups(){
+  saveGroupsGH().then(function(){renderGroupsAdmin();syncGroupSelect();showToast('Gruppi salvati ✓');}).catch(function(e){showToast('Errore: '+(e.message||e));});
+}
 
-// ===== ADMIN AUTH =====
-function toggleAdminPw(){adminPwVisible=!adminPwVisible;document.getElementById('admin-pw-box').style.display=adminPwVisible?'block':'none';if(adminPwVisible)setTimeout(function(){document.getElementById('admin-pw-input').focus();},50);}
+// ===== ADMIN =====
+function toggleAdminPw(){
+  adminPwVisible=!adminPwVisible;
+  document.getElementById('admin-pw-box').style.display=adminPwVisible?'block':'none';
+  if(adminPwVisible)setTimeout(function(){document.getElementById('admin-pw-input').focus();},50);
+}
 function checkAdmin(){
-  if(document.getElementById('admin-pw-input').value === ADMIN_PW){
-    document.getElementById('admin-pw-box').style.display = 'none';
-    adminPwVisible = false;
-
-    showToast('Caricamento...');
-
-    loadAllData()
-      .then(function(){
-        syncGroupSelect();
-        renderFriendsList();
-        renderDump();
-        showView('admin-view');
-        showToast('Dashboard caricata');
-      })
-      .catch(function(e){
-        console.error('Errore apertura admin:', e);
-        showToast('Errore admin: ' + (e.message || e));
-      });
-
+  if(document.getElementById('admin-pw-input').value===ADMIN_PW){
+    document.getElementById('admin-pw-box').style.display='none';
+    adminPwVisible=false;
+    showToast('Caricamento dati…');
+    loadAllData().then(function(){
+      syncGroupSelect();
+      renderFriendsList();
+      // Transizione smooth scura verso admin
+      smoothTo('admin-view','dark');
+    }).catch(function(e){showToast('Errore: '+(e.message||e));});
   } else {
-    document.getElementById('admin-pw-input').style.borderColor = '#f44';
-    setTimeout(function(){
-      document.getElementById('admin-pw-input').style.borderColor = '';
-    },900);
+    document.getElementById('admin-pw-input').style.borderColor='#f44';
+    setTimeout(function(){document.getElementById('admin-pw-input').style.borderColor='';},900);
   }
 }
 function showTab(t){
-  ['list','form','groups','dump'].forEach(function(id){document.getElementById('tab-'+id).style.display=id===t?'block':'none';document.getElementById('tb-'+id).classList.toggle('active',id===t);});
+  ['list','form','groups','dump'].forEach(function(id){
+    document.getElementById('tab-'+id).style.display=id===t?'block':'none';
+    document.getElementById('tb-'+id) && document.getElementById('tb-'+id).classList.toggle('active',id===t);
+  });
   if(t==='groups')renderGroupsAdmin();
   if(t==='dump')renderDump();
 }
-
-// ===== FRIENDS CRUD =====
 function renderFriendsList(){
   var g=document.getElementById('friends-grid');g.innerHTML='';
   friends.forEach(function(f){
     var c=document.createElement('div');c.className='friend-card';
-    c.innerHTML='<div class="fn">'+f.name+'</div><div class="fmeta">'+(f.group||'—')+' · '+(f.photos||[]).length+' foto · '+(f.authType==='fake'?'codice fittizio':'telefono')+'</div>';
+    c.innerHTML='<div class="fn">'+f.name+'</div><div class="fmeta">'+(f.group||'—')+' · '+(f.photos||[]).length+' foto · '+(f.authType==='fake'?'fittizio':'telefono')+'</div>';
     c.onclick=function(){editFriend(f.id);};g.appendChild(c);
   });
 }
@@ -775,7 +712,7 @@ function updateAuthHint(){
   var t=document.getElementById('f-authtype').value;
   document.getElementById('f-phone-row').style.display=t==='phone'?'block':'none';
   document.getElementById('f-fake-row').style.display=t==='fake'?'block':'none';
-  document.getElementById('auth-hint').textContent=t==='phone'?'Il numero reale genera il codice temporaneo':'Iniziali+geremias come identificatore segreto';
+  document.getElementById('auth-hint').textContent=t==='phone'?'Numero reale per generare il codice':'Iniziali+geremias come identificatore';
   if(t==='fake')updateFakeCode();
 }
 function updateFakeCode(){
@@ -835,15 +772,15 @@ function saveFriend(){
   var entry={id:id,name:name,phone:phone,authType:authType,fakeCode:fakeCode,group:group,letter:letter,photos:[].concat(currentPhotos)};
   if(editingId){var idx=-1;for(var i=0;i<friends.length;i++){if(friends[i].id===editingId){idx=i;break;}}if(idx>-1)friends[idx]=entry;else friends.push(entry);}
   else{friends.push(entry);editingId=id;}
-  showToast('Salvataggio su GitHub…');
+  showToast('Salvataggio…');
   saveFriendsGH()
-    .then(function(){renderFriendsList();showToast(name+' salvato/a ✓ — attendi 30s per la propagazione');})
-    .catch(function(e){console.error(e);showToast('Errore salvataggio: '+(e.message||e));});
+    .then(function(){renderFriendsList();showToast(name+' salvato/a ✓');})
+    .catch(function(e){showToast('Errore salvataggio: '+(e.message||e));});
 }
 function deleteFriend(){
   if(!editingId)return;
   friends=friends.filter(function(f){return f.id!==editingId;});
-  saveFriendsGH().then(function(){renderFriendsList();showTab('list');editingId=null;showToast('Profilo eliminato');});
+  saveFriendsGH().then(function(){renderFriendsList();showTab('list');editingId=null;showToast('Eliminato');});
 }
 function previewFriend(){
   showPersonal({id:'preview',name:document.getElementById('f-name').value.trim()||'Anteprima',letter:document.getElementById('f-letter').value.trim(),photos:[].concat(currentPhotos),group:document.getElementById('f-group').value,authType:'phone'});
