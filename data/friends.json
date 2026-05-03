@@ -45,5 +45,21 @@
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825407/IMG_9513_jcemen.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825409/IMG_9620_nwwofr.jpg"
     ]
+  },
+  {
+    "id": "1777825895875",
+    "name": "Irene Genovese",
+    "phone": "3884710075",
+    "authType": "phone",
+    "fakeCode": "IGgeremias",
+    "group": "",
+    "letter": "A Irene, per esserci anche nell'assenza materiale, per la sua spontaneità e la sua fermezza. Sei sempre stata un punto di riferimento e ogni piccola cosa che mi portava a pensare a te mi ricordava la nostra adolescenza che ci ha forgiati e temprati a resistere a chi ha sempre desiderato annullarci. La mia amica su cui poter contare e da cui poter tornare nonostante tutto. Sono orgoglioso di te.",
+    "photos": [
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777825886/084b5c11-d0bd-458c-9347-e134cfce7c03_qttjbm.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777825887/4717eb9d-ea3a-40af-b3f6-903f2a65c783_tsil87.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777825887/a99b02bf-003a-493e-ae23-2e7be7a49abb_v6owts.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777825888/cffbfd02-d19b-460d-ae5a-4e2502f69709_oblnlp.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777825889/f1aa8a94-1871-40a7-b028-ad45810ba59e_gzts0n.jpg"
+    ]
   }
 ]
