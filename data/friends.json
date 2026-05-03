@@ -6,7 +6,7 @@
     "authType": "phone",
     "fakeCode": "ADgeremias",
     "group": "",
-    "letter": "Ad Alessandro, \"mio marito\", per la leggerezza che mi hai trasmesso ogni giorno nonostante tutto. Spero che conoscermi ti abbia fatto riacquistare la fiducia nelle amicizie come quella che dal nulla si è instaurata tra di noi.",
+    "letter": "Ad Alessandro, \"mio marito\", per la leggerezza che mi hai trasmesso ogni giorno nonostante tutto. Spero che conoscermi ti abbia fatto riacquistare la fiducia nelle amicizie come quella che dal nulla si Ã¨ instaurata tra di noi.",
     "photos": [
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363151_qpe0a7.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363150_voifew.jpg",
@@ -21,5 +21,15 @@
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824624/6017136323300363155_uyviok.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824625/6017136323300363153_jddelp.jpg"
     ]
+  },
+  {
+    "id": "1777824811507",
+    "name": "Gloria Daniele",
+    "phone": "3425023397",
+    "authType": "phone",
+    "fakeCode": "GDgeremias",
+    "group": "",
+    "letter": "A Gloria, per essere stata subito mia complice. Per esserci capiti e confidati sia nei momenti più felici che in quelli più bui.\nLa nostra convivenza forzata è diventata un desiderio di simbiosi che ci ha portati a coesistere e scoprirci profondamente. Sei stata un faro in uno dei momenti più bui e spero di poterti restituire il favore giornalmente.",
+    "photos": []
   }
 ]
