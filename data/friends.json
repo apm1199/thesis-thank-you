@@ -1,17 +1,25 @@
 [
   {
     "id": "1777823495495",
-    "name": "Depox",
-    "phone": "+393518980995",
-    "authType": "fake",
-    "fakeCode": "Dgeremias",
+    "name": "Alessandro Depaoli",
+    "phone": "3393161508",
+    "authType": "phone",
+    "fakeCode": "ADgeremias",
     "group": "",
-    "letter": "okok",
+    "letter": "Ad Alessandro, \"mio marito\", per la leggerezza che mi hai trasmesso ogni giorno nonostante tutto. Spero che conoscermi ti abbia fatto riacquistare la fiducia nelle amicizie come quella che dal nulla si è instaurata tra di noi.",
     "photos": [
-      "https://res.cloudinary.com/dypweuagc/image/upload/v1777823503/6017136323300363151_lzuoko.jpg",
-      "https://res.cloudinary.com/dypweuagc/image/upload/v1777823504/6017136323300363150_soqpyo.jpg",
-      "https://res.cloudinary.com/dypweuagc/image/upload/v1777823505/6017136323300363154_ihipws.jpg",
-      "https://res.cloudinary.com/dypweuagc/image/upload/v1777823506/6017136323300363148_d45pfn.jpg"
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363151_qpe0a7.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363150_voifew.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824617/6017136323300363154_x2eznv.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824618/6017136323300363148_r2rr6n.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824619/6017136323300363158_a9ysju.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824620/6017136323300363157_laugpc.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824621/6017136323300363149_v8uvga.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824621/6017136323300363147_sfpcsn.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824622/6017136323300363156_sbjf0z.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824623/6017136323300363152_mep8sx.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824624/6017136323300363155_uyviok.jpg",
+      "https://res.cloudinary.com/dypweuagc/image/upload/v1777824625/6017136323300363153_jddelp.jpg"
     ]
   }
 ]
