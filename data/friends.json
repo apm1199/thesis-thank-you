@@ -6,7 +6,7 @@
     "authType": "phone",
     "fakeCode": "ADgeremias",
     "group": "",
-    "letter": "Ad Alessandro, \"mio marito\", per la leggerezza che mi hai trasmesso ogni giorno nonostante tutto. Spero che conoscermi ti abbia fatto riacquistare la fiducia nelle amicizie come quella che dal nulla si ÃÂ¨ instaurata tra di noi.",
+    "letter": "Ad Alessandro, \"mio marito\", per la leggerezza che mi hai trasmesso ogni giorno nonostante tutto. Spero che conoscermi ti abbia fatto riacquistare la fiducia nelle amicizie come quella che dal nulla si ÃÂÃÂ¨ instaurata tra di noi.",
     "photos": [
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363151_qpe0a7.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777824616/6017136323300363150_voifew.jpg",
@@ -29,7 +29,7 @@
     "authType": "phone",
     "fakeCode": "GDgeremias",
     "group": "",
-    "letter": "A Gloria, per essere stata subito mia complice. Per esserci capiti e confidati sia nei momenti più felici che in quelli più bui.\nLa nostra convivenza forzata è diventata un desiderio di simbiosi che ci ha portati a coesistere e scoprirci profondamente. Sei stata un faro in uno dei momenti più bui e spero di poterti restituire il favore giornalmente.",
+    "letter": "A Gloria, per essere stata subito mia complice. Per esserci capiti e confidati sia nei momenti piÃ¹ felici che in quelli piÃ¹ bui.\nLa nostra convivenza forzata Ã¨ diventata un desiderio di simbiosi che ci ha portati a coesistere e scoprirci profondamente. Sei stata un faro in uno dei momenti piÃ¹ bui e spero di poterti restituire il favore giornalmente.",
     "photos": [
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825378/71dab4d3-b9a9-4aff-bf5a-897c2e6868c6_rmjrid.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825380/IMG_0591_vff9js.jpg",
@@ -53,7 +53,7 @@
     "authType": "phone",
     "fakeCode": "IGgeremias",
     "group": "",
-    "letter": "A Irene, per esserci anche nell'assenza materiale, per la sua spontaneità e la sua fermezza. Sei sempre stata un punto di riferimento e ogni piccola cosa che mi portava a pensare a te mi ricordava la nostra adolescenza che ci ha forgiati e temprati a resistere a chi ha sempre desiderato annullarci. La mia amica su cui poter contare e da cui poter tornare nonostante tutto. Sono orgoglioso di te.",
+    "letter": "A Irene, per esserci anche nell'assenza materiale, per la sua spontaneitÃ  e la sua fermezza. Sei sempre stata un punto di riferimento e ogni piccola cosa che mi portava a pensare a te mi ricordava la nostra adolescenza che ci ha forgiati e temprati a resistere a chi ha sempre desiderato annullarci. La mia amica su cui poter contare e da cui poter tornare nonostante tutto. Sono orgoglioso di te.",
     "photos": [
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825886/084b5c11-d0bd-458c-9347-e134cfce7c03_qttjbm.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777825887/4717eb9d-ea3a-40af-b3f6-903f2a65c783_tsil87.jpg",
@@ -101,5 +101,15 @@
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777826583/IMG_8517_bsiomu.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1777826584/IMG_9228_he78e2.jpg"
     ]
+  },
+  {
+    "id": "1777826665506",
+    "name": "Mariapaola Lo Iacono",
+    "phone": "3928197244",
+    "authType": "phone",
+    "fakeCode": "MLIgeremias",
+    "group": "Famiglia",
+    "letter": "",
+    "photos": []
   }
 ]
