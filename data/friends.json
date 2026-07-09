@@ -618,5 +618,15 @@
     "group": "Famiglia",
     "letter": "",
     "photos": []
+  },
+  {
+    "id": "1783608110270",
+    "name": "Francesco Zuin",
+    "phone": "",
+    "authType": "fake",
+    "fakeCode": "FZgeremias",
+    "group": "Musychen",
+    "letter": "",
+    "photos": []
   }
 ]
