@@ -588,5 +588,15 @@
       "https://res.cloudinary.com/dypweuagc/image/upload/v1783586674/5945231024507784637_yps5h8.jpg",
       "https://res.cloudinary.com/dypweuagc/image/upload/v1783586676/5945231024507784640_tixgk1.jpg"
     ]
+  },
+  {
+    "id": "1783604734642",
+    "name": "Gianluca Deferre",
+    "phone": "3926936582",
+    "authType": "phone",
+    "fakeCode": "GDgeremias",
+    "group": "Musychen",
+    "letter": "",
+    "photos": []
   }
 ]
