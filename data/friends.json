@@ -496,9 +496,7 @@
   {
     "id": "1783604734642",
     "name": "Gianluca Deferre",
-    "phone": "3926936582",
-    "authType": "phone",
-    "fakeCode": "GDgeremias",
+    "passkey": "47",
     "group": "Musychen",
     "letter": "",
     "photos": []
