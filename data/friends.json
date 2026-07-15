@@ -275,9 +275,7 @@
   {
     "id": "1777828111785",
     "name": "Vittorio Buscarnera",
-    "phone": "3209538467",
-    "authType": "phone",
-    "fakeCode": "VBgeremias",
+    "passkey": "29",
     "group": "Musychen",
     "letter": "",
     "photos": []
