@@ -211,9 +211,7 @@
   {
     "id": "1777827631184",
     "name": "Francesco Di Crescenzo",
-    "phone": "3338482548",
-    "authType": "phone",
-    "fakeCode": "FDCgeremias",
+    "passkey": "22",
     "group": "",
     "letter": "A Francesco, per i momenti di festa e l'ascolto. Per l'allegria contagiosa (e per avermi mostrato Thanos). Sei una persona d'oro. Ti voglio bene.",
     "photos": []
