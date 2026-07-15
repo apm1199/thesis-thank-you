@@ -445,9 +445,7 @@
   {
     "id": "1777829214153",
     "name": "Pietro Barbieri",
-    "phone": "3349121310",
-    "authType": "phone",
-    "fakeCode": "PBgeremias",
+    "passkey": "44",
     "group": "Famiglia Barbieri",
     "letter": "",
     "photos": []
