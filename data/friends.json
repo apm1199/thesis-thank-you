@@ -339,9 +339,7 @@
   {
     "id": "1777828547561",
     "name": "Michel Orsi",
-    "phone": "",
-    "authType": "fake",
-    "fakeCode": "MOgeremias",
+    "passkey": "37",
     "group": "Musychen",
     "letter": "",
     "photos": []
