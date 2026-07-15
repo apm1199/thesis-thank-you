@@ -107,9 +107,7 @@
   {
     "id": "1777827193309",
     "name": "Martina Russo",
-    "phone": "3200745881",
-    "authType": "phone",
-    "fakeCode": "MRgeremias",
+    "passkey": "9",
     "group": "Triade Catalitica",
     "letter": "",
     "photos": []
