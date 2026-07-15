@@ -371,9 +371,7 @@
   {
     "id": "1777828660160",
     "name": "Alice Balboni",
-    "phone": "",
-    "authType": "fake",
-    "fakeCode": "ABgeremias",
+    "passkey": "41",
     "group": "Hematica - TNH",
     "letter": "",
     "photos": []
