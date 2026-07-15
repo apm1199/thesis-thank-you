@@ -347,9 +347,7 @@
   {
     "id": "1777828557984",
     "name": "Michele Lessona",
-    "phone": "",
-    "authType": "fake",
-    "fakeCode": "MLgeremias",
+    "passkey": "38",
     "group": "Musychen",
     "letter": "",
     "photos": []
