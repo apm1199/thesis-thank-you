@@ -331,11 +331,9 @@
   {
     "id": "1777828500956",
     "name": "Andrea Querio",
-    "phone": "",
-    "authType": "fake",
-    "fakeCode": "AQgeremias",
+    "passkey": "36",
     "group": "",
-    "letter": "Ad Andrea, per essere fonte di ispirazione accademica. Per il tuo modo di scherzare sottile (anche senza che ci conoscessimo a fondo) ma che in fondo ti rende più leggero di quanto si possa dire guardando la tua faccia da professore severo. Ti auguro di essere sempre circondato di persone che ti stimano e che ricambino il tuo affetto in maniera dieci volte più intensa.",
+    "letter": "Ad Andrea,\n\nper essere, senza volerlo, una fonte di ispirazione accademica. Per quel tuo umorismo sottile, capace di alleggerire tutto anche senza conoscerci davvero. E perché, dietro quella faccia da professore severo, si nasconde molta più leggerezza di quanto lasci intendere.\n\nTi auguro di essere sempre circondato da persone che sappiano vederti davvero, che ti stimino e che ricambino il tuo affetto con un’intensità almeno dieci volte più grande.",
     "photos": []
   },
   {
