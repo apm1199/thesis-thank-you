@@ -510,9 +510,7 @@
   {
     "id": "1783605731224",
     "name": "Tommaso Mantovan",
-    "phone": "3928045171",
-    "authType": "phone",
-    "fakeCode": "TMgeremias",
+    "passkey": "dad",
     "group": "Famiglia",
     "letter": "",
     "photos": []
