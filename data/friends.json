@@ -518,9 +518,7 @@
   {
     "id": "1783608110270",
     "name": "Francesco Zuin",
-    "phone": "",
-    "authType": "fake",
-    "fakeCode": "FZgeremias",
+    "passkey": "48",
     "group": "Musychen",
     "letter": "",
     "photos": []
