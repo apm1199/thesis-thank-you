@@ -437,9 +437,7 @@
   {
     "id": "1777829186915",
     "name": "Rossella Facondo",
-    "phone": "3429573043",
-    "authType": "phone",
-    "fakeCode": "RFgeremias",
+    "passkey": "43",
     "group": "Famiglia Barbieri",
     "letter": "",
     "photos": []
