@@ -429,9 +429,7 @@
   {
     "id": "1777829150749",
     "name": "Marco Barbieri",
-    "phone": "3398352014",
-    "authType": "phone",
-    "fakeCode": "MBgeremias",
+    "passkey": "42",
     "group": "Famiglia Barbieri",
     "letter": "",
     "photos": []
