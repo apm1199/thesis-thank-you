@@ -502,9 +502,7 @@
   {
     "id": "1783605686823",
     "name": "Mariapaola Lo Iacono",
-    "phone": "3928197244",
-    "authType": "phone",
-    "fakeCode": "MLIgeremias",
+    "passkey": "mom",
     "group": "Famiglia",
     "letter": "",
     "photos": []
