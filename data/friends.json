@@ -259,9 +259,7 @@
   {
     "id": "1777828037601",
     "name": "Edoardo Matta",
-    "phone": "3341451859",
-    "authType": "phone",
-    "fakeCode": "EMgeremias",
+    "passkey": "27",
     "group": "Musychen",
     "letter": "",
     "photos": []
