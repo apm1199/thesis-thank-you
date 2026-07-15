@@ -171,9 +171,7 @@
   {
     "id": "1777827469287",
     "name": "Giacomo Carlino",
-    "phone": "3317667318",
-    "authType": "phone",
-    "fakeCode": "GCgeremias",
+    "passkey": "17",
     "group": "",
     "letter": "A Giacomo, per la tua leggerezza. Per le partite a scacchi in auletta e per le serate in Piazza Sant'Anna. Uno degli amici sinceri che nonostante ubriaco come me si sarebbe schierato a difendermi a spada tratta in mezzo a una massa di malandrini (non lo dimenticherò mai). Ti voglio bene.",
     "photos": []
