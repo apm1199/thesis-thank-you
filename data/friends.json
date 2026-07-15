@@ -115,9 +115,7 @@
   {
     "id": "1777827226815",
     "name": "Irene Migliore",
-    "phone": "3290147143",
-    "authType": "phone",
-    "fakeCode": "IMgeremias",
+    "passkey": "10",
     "group": "Triade Catalitica",
     "letter": "",
     "photos": []
